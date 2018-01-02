@@ -4,17 +4,26 @@
 
 // react 加载
 import React from 'react';
+import {Link} from 'react-router';
 
-// 组件引入
-import Login from './Login';
-import Reg from './Reg';
 
-//
-const User = () => (
-  <div>
-    <Login />
-    <Reg />
-  </div>
-);
+// User 组件
+class User extends React.Component {
+  //
+  render() {
+    return (
+      <div>
+        <ul>
+          <li><Link to="/user/login">login</Link></li>
+          <li><Link to="/user/reg">reg</Link></li>
+        </ul>
+        <h3>User 页面~~</h3>
+        {this.props.children}
+      </div>
+    );
+  }
+}
 
+
+// 导出
 export default User;

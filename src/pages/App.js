@@ -6,9 +6,9 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-// 组件引入
-// import User from './User/User';
-// import Home from './Home/Home';
+// 组件
+import Nav from './common/Nav';
+
 
 // App 组件
 class App extends React.Component {
@@ -22,6 +22,7 @@ class App extends React.Component {
         </ul>
         <h3>App组件~~</h3>
         {this.props.children}
+        <Nav />
       </div>
     );
   }
