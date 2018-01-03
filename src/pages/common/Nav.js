@@ -17,7 +17,7 @@ class Nav extends React.Component {
     return (
       <ul className="nav">
         <li className="nav-home">
-          <Link to="/home/playing"> 首页</Link>
+          <Link to="/home/film"> 首页</Link>
         </li>
         <li className="nav-order">
           <Link to="/order">订单</Link>

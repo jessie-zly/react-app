@@ -2,6 +2,6 @@
 .home>.home-title{font: 300 24px/60px '';text-align: center;color: #fff;background: #e4366b;}
 .home>.home-nav{display: flex;justify-content: space-between;padding: 0 50px;}
 .home>.home-nav>li{z-index: 50;}
-.home>.home-nav>li>a{display: block;font: 16px/40px '';padding: 0 30px;}
+.home>.home-nav>li>a{display: block;font: 16px/40px '';padding: 0 60px;}
 .home>.home-nav>li>a.home-active{border-bottom: 5px solid #e4366b;color: #e4366b;}
 .home>.home-underline{width:100%;height: 5px;background: #c2c2c2;position: absolute;top: 100px;}

@@ -15,8 +15,8 @@ import {
 import App from './pages/App';
 // home
 import Home from './pages/home/Home';
-import FilmPlaying from "./pages/home/film/FilmPlaying";
-import FilmComing from "./pages/home/film/FilmComing";
+import Film from "./pages/home/film/Film";
+import Cinema from "./pages/home/film/Cinema";
 //
 import Order from './pages/order/Order';
 // import List from './pages/order/List';
@@ -35,8 +35,8 @@ const RouterConfig = () => (
       {/*默认访问 /home*/}
       <IndexRedirect to="/home" />
       <Route path='/home' component={Home}>
-        <Route path='playing' component={FilmPlaying} />
-        <Route path='coming' component={FilmComing} />
+        <Route path='film' component={Film} />
+        <Route path='cinema' component={Cinema} />
       </Route>
       <Route path='/order' component={Order} />
       {/*<Route path='/list' component={List} />*/}

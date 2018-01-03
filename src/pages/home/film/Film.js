@@ -7,11 +7,11 @@ import React from 'react';
 import {Link} from 'react-router';
 
 // css
-import '../../../assets/css/home/filmplaying.css';
+import '../../../assets/css/home/film.css';
 
 
 // define
-class FilmPlaying extends React.Component {
+class Film extends React.Component {
   //
   constructor() {
     super();
@@ -59,7 +59,7 @@ class FilmPlaying extends React.Component {
     // const url = `https://api.douban.com/v2/movie/in_theaters`;
     // const url = 'http://m.maoyan.com/movie/list.json?type=hot&offset=0&limit=1000';
 
-    const url = '../../../../data/film-playing.json';
+    const url = '../../../../data/film.json';
     // 获取
     fetch(url).then(
       // res => console.log('res数据', res)
@@ -75,4 +75,4 @@ class FilmPlaying extends React.Component {
 
 
 // export
-export default FilmPlaying;
+export default Film;
