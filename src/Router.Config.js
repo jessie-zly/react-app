@@ -13,7 +13,11 @@ import {
 
 // 引入自定义组件
 import App from './pages/App';
+// home
 import Home from './pages/home/Home';
+import FilmPlaying from "./pages/home/film/FilmPlaying";
+import FilmComing from "./pages/home/film/FilmComing";
+//
 import Order from './pages/order/Order';
 // import List from './pages/order/List';
 // user
@@ -30,7 +34,10 @@ const RouterConfig = () => (
     <Route path='/' component={App}>
       {/*默认访问 /home*/}
       <IndexRedirect to="/home" />
-      <Route path='/home' component={Home} />
+      <Route path='/home' component={Home}>
+        <Route path='playing' component={FilmPlaying} />
+        <Route path='coming' component={FilmComing} />
+      </Route>
       <Route path='/order' component={Order} />
       {/*<Route path='/list' component={List} />*/}
       <Route path='/user' component={UserCenter}>
