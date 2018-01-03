@@ -17,29 +17,30 @@ class Film extends React.Component {
     super();
     // 初始化数据
     this.state = {
-      filmPlayingList: []
+      filmList: []
     };
   }
 
   //
   render() {
     return (
-      <ul className='film-playing'>
+      <ul className='film'>
+        <li className='film-box'></li>
         {
-          this.state.filmPlayingList.map(item => {
+          this.state.filmList.map(item => {
             return (
               <li key={item.id}>
-                <Link to={{pathname: '/detail/' + item.id}}>
-                  <img src={item.img} alt='未找到图片' className='playing-image' />
-                  <div className='playing-desc'>
-                    <span className='playing-title'>{item.nm}</span>
-                    <span className='playing-cat'>类型: {item.cat}</span>
-                    <span className='playing-casts'>主演: {item.star}</span>
-                    <span className='playing-showInfo'>{item.showInfo}</span>
+                <Link to={{pathname: '/filmDetail/' + item.id}}>
+                  <img src={item.img} alt='未找到图片' className='film-image' />
+                  <div className='film-desc'>
+                    <span className='film-title'>{item.nm}</span>
+                    <span className='film-cat'>类型: {item.cat}</span>
+                    <span className='film-casts'>主演: {item.star}</span>
+                    <span className='film-showInfo'>{item.showInfo}</span>
                   </div>
                 </Link>
-                <div className='playing-sc'>{item.sc === 0 ? item.wish + '❤️' : item.sc}</div>
-                <button className='playing-buy'>{item.sc === 0 ? '预售' : '购票'}</button>
+                <div className='film-sc'>{item.sc === 0 ? item.wish + '❤️' : item.sc}</div>
+                <button className='film-buy'>{item.sc === 0 ? '预售' : '购票'}</button>
               </li>
             );
           })
@@ -50,11 +51,11 @@ class Film extends React.Component {
 
   //
   componentDidMount() {
-    this.getFilmPlaying();
+    this.getFilm();
   }
 
   // 获取上映电影
-  getFilmPlaying() {
+  getFilm() {
     // 豆瓣 API
     // const url = `https://api.douban.com/v2/movie/in_theaters`;
     // const url = 'http://m.maoyan.com/movie/list.json?type=hot&offset=0&limit=1000';
@@ -66,7 +67,7 @@ class Film extends React.Component {
       res => res.json()
     ).then(
       // data => console.log('data数据', data)
-      data => this.setState({filmPlayingList: data.data.movies})
+      data => this.setState({filmList: data.data.movies})
     ).catch(
       (error) => console.log('Cannot get data from ' + url, error)
     );
