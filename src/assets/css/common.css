@@ -1,0 +1,26 @@
+/*公共样式*/
+html, body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, ul {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  /*兼容安卓  兼容苹果设备，黑体 所有字体不存在，系统默认字体*/
+  font-family: Helvetica Neue, Helvetica, STHeiTi, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

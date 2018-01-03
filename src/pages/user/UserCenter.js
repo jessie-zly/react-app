@@ -1,5 +1,5 @@
 /**
- * User 页面
+ * UserCenter 页面
  */
 
 // react 加载
@@ -13,12 +13,11 @@ class User extends React.Component {
   render() {
     return (
       <div>
+        {this.props.children}
         <ul>
           <li><Link to="/user/login">login</Link></li>
           <li><Link to="/user/reg">reg</Link></li>
         </ul>
-        <h3>User 页面~~</h3>
-        {this.props.children}
       </div>
     );
   }

@@ -17,9 +17,9 @@ import Home from './pages/home/Home';
 import Order from './pages/order/Order';
 // import List from './pages/order/List';
 // user
-import User from './pages/user/User';
-import Login from './pages/user/Login';
-import Reg from './pages/user/Reg';
+import UserCenter from './pages/user/UserCenter';
+import Login from './pages/user/info/Login';
+import Reg from './pages/user/info/Reg';
 // 404
 import Error from './pages/common/Error';
 
@@ -33,7 +33,7 @@ const RouterConfig = () => (
       <Route path='/home' component={Home} />
       <Route path='/order' component={Order} />
       {/*<Route path='/list' component={List} />*/}
-      <Route path='/user' component={User}>
+      <Route path='/user' component={UserCenter}>
         <Route path='login' component={Login} />
         <Route path='reg' component={Reg} />
       </Route>
