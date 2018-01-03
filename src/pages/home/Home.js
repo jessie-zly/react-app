@@ -23,6 +23,7 @@ class Home extends React.Component {
         </ul>
         <div className='home-underline'></div>
         {this.props.children}
+        <div className='home-box'></div>
       </div>
     )
   }
