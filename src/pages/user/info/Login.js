@@ -35,7 +35,7 @@ class Login extends React.Component {
             <label><input type="checkbox" className="login-remember" />记住密码</label>
             <a href="#" className="login-forget">忘记密码？</a>
           </li>
-          <li><input type="submit" value="确认登录" className="login-sub" /></li>
+          <li><input type="submit" value="确认登录" className="login-sub" onClick={()=>{hashHistory.push('/user')}}/></li>
         </ul>
       </div>
     );
