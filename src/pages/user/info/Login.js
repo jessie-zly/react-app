@@ -24,11 +24,11 @@ class Login extends React.Component {
         </ul>
         <ul className="login-main">
           <li>
-            <label>账号</label>
+            <label>账号:</label>
             <input type="text" className="login-username" placeholder="请输入账户" />
           </li>
           <li>
-            <label>密码</label>
+            <label>密码:</label>
             <input type="password" className="login-password" placeholder="请输入密码" />
           </li>
           <li>

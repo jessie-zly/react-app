@@ -2,87 +2,59 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  background: #F3EFF0;
+  color: #212121;
 }
 
-/*头部*/
-
-@media screen and (min-width: 322px) and (max-width: 400px) {
-  header {
-    font-size: 20px;
-  }
+.reg-container > .reg-user-nav {
+  height: 50px;
+  background: #e4366b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media screen and (min-width: 400px) {
-  header {
-    font-size: 22px;
-  }
+.reg-container > .reg-user-nav > li {
+  padding: 0 20px;
+  font: 20px/50px '';
+  color: #FFF;
 }
 
-.main {
-  background-color: #f3eff0;
-  padding-top: 15%;
-  height: 100%;
-  width: 100%;
-}
-
-ul {
+.reg-container > .reg-main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.main li {
+.reg-container > .reg-main > li {
+  color: #a49a96;
   width: 80%;
-  margin-bottom: 10%;
-  height: 44px;
-  line-height: 44px;
+  border: 1px solid #a49a96;
+  font: 20px/50px '';
   background-color: #fff;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
-  display: -webkit-flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.main li:last-child {
-  margin-top: 15%;
+.reg-container > .reg-main > li > label {
+  text-indent: 10px;
 }
 
-.main ul li label {
+.reg-container > .reg-main > li > input {
   display: block;
-  flex: 1;
-  color: #676767;
-  text-align: right;
-}
-
-.main ul li input {
-  display: block;
-  flex: 1;
-  border: none;
+  border: 0;
   outline: none;
-  line-height: 45px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  padding-left: 10px;
+  font: 20px/30px '';
 }
 
-@media screen and (min-width: 322px) and (max-width: 400px) {
-  .main ul li label, .main ul li input {
-    font-size: 16px;
-  }
-}
-
-@media screen and (min-width: 400px) {
-  .main ul li label, .main ul li input {
-    font-size: 18px;
-  }
-}
-
-#btn_sub {
+.reg-container > .reg-main > li > .reg-sub {
+  width: 100%;
+  font: 700 20px/50px '';
   text-align: center;
   border-radius: 5px;
   color: #fff;
-  background: -webkit-linear-gradient(#f8618a, #d8104f);
-  background: -moz-linear-gradient(#f8618a, #d8104f);
-  background: -o-linear-gradient(#f8618a, #d8104f);
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f8618a), to(#d8104f));
   background: linear-gradient(#f8618a, #d8104f);
-
 }

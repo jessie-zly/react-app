@@ -4,11 +4,9 @@
 
 // 引入 react
 import React from 'react';
-import {Link} from 'react-router';
 
 // 全局 css 引入
 import '../assets/css/common.css';
-
 // 组件
 import Nav from './common/Nav';
 
