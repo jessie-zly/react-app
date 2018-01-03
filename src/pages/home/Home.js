@@ -5,11 +5,21 @@
 // 引入 react
 import React from 'react';
 
+// 引入 Carousel
+import Carousel from './carousel/Carousel';
+
 
 // define
-const Home = () => (
-  <h4>Home 组件</h4>
-);
+class Home extends React.Component {
+  render() {
+    return (
+      <div>
+        <span>狗眼电影</span>
+        <Carousel />
+      </div>
+    )
+  }
+}
 
 
 // 导出

@@ -1,0 +1,46 @@
+.carousel {
+  width: 100%;
+  height: 225px;
+}
+.carousel >div{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  border: 1px solid #e4366b;
+}
+.carousel > .carousel-loop1 {
+  width: 100%;
+  height: 100%;
+  background: url(../../images/g1.jpg) no-repeat center;
+}
+
+.carousel > .carousel-loop2 {
+  width: 100%;
+  height: 100%;
+  background: url(../../images/g2.jpg) no-repeat center;
+}
+
+.carousel > .carousel-loop3 {
+  width: 100%;
+  height: 100%;
+  background: url(../../images/g3.jpg) no-repeat center;
+}
+
+.carousel > .carousel-loop4 {
+  width: 100%;
+  height: 100%;
+  background: url(../../images/g4.jpg) no-repeat center;
+}
+
+.carousel > .carousel-loop5 {
+  width: 100%;
+  height: 100%;
+  background: url(../../images/g5.jpg) no-repeat center;
+}
+
+.carousel > .carousel-loop6 {
+  width: 100%;
+  height: 100%;
+  background: url(../../images/g6.jpg) no-repeat center;
+}
