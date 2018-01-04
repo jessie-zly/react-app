@@ -7,7 +7,7 @@ import React from 'react';
 import {Link} from 'react-router';
 
 // css
-import '../../../assets/css/home/cinema.css';
+import '../../../assets/css/home/cinema/cinema.css';
 
 
 //

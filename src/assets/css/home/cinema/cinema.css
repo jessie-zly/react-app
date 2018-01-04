@@ -1,4 +1,4 @@
-.cinema{width: 100%;height: 100%;padding: 0 25px;display: flex;flex-direction: column;justify-content: center;}
+.cinema{width: 100%;height: 100%;padding: 0 25px;display: flex;flex-direction: column;justify-content: center;background: #fff;}
 .cinema>li{width: 100%;padding: 5px 0;border-bottom: 1px solid #e6e6e6;box-sizing: border-box;}
 .cinema>li.cinema-box{width: 100%;height: 105px;}
 

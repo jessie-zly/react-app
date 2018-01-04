@@ -6,7 +6,9 @@ html, body {
 * {
   box-sizing: border-box;
 }
-
+body{
+  background: #EFEFEF;
+}
 body, ul {
   margin: 0;
   padding: 0;

@@ -7,7 +7,7 @@ import React from 'react'
 import ReactSwipe from 'react-swipe';
 
 // 引入 css
-import '../../../assets/css/home/carousel.css';
+import '../../../assets/css/home/carousel/carousel.css';
 
 
 // define

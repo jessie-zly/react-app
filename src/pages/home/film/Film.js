@@ -7,7 +7,7 @@ import React from 'react';
 import {Link} from 'react-router';
 
 // css
-import '../../../assets/css/home/film.css';
+import '../../../assets/css/home/film/film.css';
 
 
 // define
@@ -30,7 +30,8 @@ class Film extends React.Component {
           this.state.filmList.map(item => {
             return (
               <li key={item.id}>
-                <Link to={{pathname: '/filmDetail/' + item.id}}>
+                {/*<Link to={{pathname: '/film-detail/' + item.id}}>*/}
+                <Link to={'/film-detail'}>
                   <img src={item.img} alt='未找到图片' className='film-image' />
                   <div className='film-desc'>
                     <span className='film-title'>{item.nm}</span>
