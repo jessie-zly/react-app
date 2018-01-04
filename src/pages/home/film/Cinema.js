@@ -25,6 +25,7 @@ class Cinema extends React.Component {
   render() {
     return (
       <ul className='cinema'>
+        <li className='cinema-box'></li>
         {
           this.state.cinemaList.map(item => {
             return (
