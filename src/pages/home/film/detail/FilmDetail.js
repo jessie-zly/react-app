@@ -1,6 +1,6 @@
 // import
 import React from 'react';
-import {hashHistory} from 'react-router';
+import {hashHistory, Link} from 'react-router';
 import Comment from "./comment/Comment";
 
 // css
@@ -12,7 +12,9 @@ class FilmDetail extends React.Component {
   constructor() {
     super();
     this.state = {
-      movie: {},
+      movie: {
+        star: '',
+      },
       comment: {
         hcmts: [],
         cmts: [],
@@ -57,21 +59,26 @@ class FilmDetail extends React.Component {
               <span className='dir-name'>{movie.dir}</span>
               <span className='dir-title'>导演</span>
             </dt>
-            {/*<dd className='detail-show-star'>{movie.star}</dd>*/}
-            <dd className='detail-show-star'>
-              <img src={movie.img} alt="图片未找到" className='show-img' />
-              <span className='star-name'>泰勒·斯威夫特</span>
-              <span className='star-title'>演员</span>
-            </dd>
+            {
+              movie.star.split(' ').map((item, index) => {
+                return (
+                  <dd className='detail-show-star' key={index}>
+                    <img src={movie.img} alt="图片未找到" className='show-img' />
+                    <span className='star-name'>{item}</span>
+                    <span className='star-title'>演员</span>
+                  </dd>
+                )
+              })
+            }
           </dl>
           <div className='detail-show-total' onClick={() => {
-            hashHistory.push('/film-detail/credits')
+            hashHistory.push(`/film-detail/${this.props.params.id}/credits`)
           }}>
             <span className='detail-show-total-credits'>全体演职人员</span>
             <span className='detail-show-total-arrow'>➯</span>
           </div>
         </div>
-        <Comment id={this.props.params.id}/>
+        <Comment id={this.props.params.id} />
       </div>
     );
   }

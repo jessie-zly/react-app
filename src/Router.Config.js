@@ -40,9 +40,7 @@ const RouterConfig = () => (
         <Route path='film' component={Film} />
         <Route path='cinema' component={Cinema} />
       </Route>
-      <Route path='/film-detail/:id' component={FilmDetail}>
-        <Route path='comment' component={Comment} />
-      </Route>
+      <Route path='/film-detail/:id' component={FilmDetail} />
       <Route path='/order' component={Order} />
       {/*<Route path='/list' component={List} />*/}
       <Route path='/user' component={UserCenter}>

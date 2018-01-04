@@ -22,6 +22,6 @@
 .comment>.comment-info>.comment-user>.comment-user-command>.comment-user-command-reply>.comment-user-command-reply-count{display: block;font: 14px/30px '';color: #999;}
 
 .comment>.comment-total{width: 100%;}
-.comment>.comment-total>button{width: 100%;font: 14px/40px '';color: #e4366b;text-align: center;outline: none;}
+.comment>.comment-total>.comment-more{width: 100%;font: 14px/40px '';color: #e4366b;text-align: center;outline: none;}
 
 .comment>.comment-box{width: 100%;height: 50px;}
