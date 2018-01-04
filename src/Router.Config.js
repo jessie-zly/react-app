@@ -16,7 +16,8 @@ import App from './pages/App';
 // home
 import Home from './pages/home/Home';
 import Film from "./pages/home/film/Film";
-import FilmDetail from './pages/home/film/FilmDetail';
+import FilmDetail from './pages/home/film/detail/FilmDetail';
+import Comment from './pages/home/film/detail/comment/Comment';
 import Cinema from "./pages/home/cinema/Cinema";
 //
 import Order from './pages/order/Order';
@@ -39,7 +40,9 @@ const RouterConfig = () => (
         <Route path='film' component={Film} />
         <Route path='cinema' component={Cinema} />
       </Route>
-      <Route path='/film-detail' component={FilmDetail} />
+      <Route path='/film-detail/:id' component={FilmDetail}>
+        <Route path='comment' component={Comment} />
+      </Route>
       <Route path='/order' component={Order} />
       {/*<Route path='/list' component={List} />*/}
       <Route path='/user' component={UserCenter}>

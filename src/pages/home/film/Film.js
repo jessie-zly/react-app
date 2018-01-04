@@ -25,13 +25,12 @@ class Film extends React.Component {
   render() {
     return (
       <ul className='film'>
-        <li className='film-box'></li>
+        <li className='film-box'/>
         {
           this.state.filmList.map(item => {
             return (
               <li key={item.id}>
-                {/*<Link to={{pathname: '/film-detail/' + item.id}}>*/}
-                <Link to={'/film-detail'}>
+                <Link to={{pathname: '/film-detail/' + item.id}}>
                   <img src={item.img} alt='未找到图片' className='film-image' />
                   <div className='film-desc'>
                     <span className='film-title'>{item.nm}</span>

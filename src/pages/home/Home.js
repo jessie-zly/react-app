@@ -21,10 +21,10 @@ class Home extends React.Component {
             <li><Link to="/home/film" activeClassName='home-active'> 影片</Link></li>
             <li><Link to="/home/cinema" activeClassName='home-active'>影院</Link></li>
           </ul>
-          <div className='home-underline'></div>
+          <div className='home-underline'/>
         </div>
         {this.props.children}
-        <div className='home-box'></div>
+        <div className='home-box'/>
       </div>
     )
   }

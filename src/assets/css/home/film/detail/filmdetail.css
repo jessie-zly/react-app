@@ -39,23 +39,3 @@
 .film-detail>.detail-show>.detail-show-total>span.detail-show-total-credits{}
 .film-detail>.detail-show>.detail-show-total>span.detail-show-total-arrow{width: 40px;text-align: center;}
 
-.film-detail>.detail-comment{width: 100%;margin-top: 10px;border-top: 1px solid #ddd;background: #fff;}
-.film-detail>.detail-comment>.comment-title{width: 100%;font: 16px/30px '';color: #666;border-bottom: 1px solid #ddd;padding: 10px 15px;}
-.film-detail>.detail-comment>.comment-info{width: 100%;padding: 10px 15px;border-bottom: 1px solid #ddd;padding: 10px 15px;}
-.film-detail>.detail-comment>.comment-info>.comment-rate{display: flex;justify-content: flex-start;}
-.film-detail>.detail-comment>.comment-info>.comment-rate>span{display: block}
-.film-detail>.detail-comment>.comment-info>.comment-rate>.comment-score{color: #FFB401;margin-right: 10px;}
-.film-detail>.detail-comment>.comment-info>.comment-rate>.comment-time{color: #5ecae5;}
-
-.film-detail>.detail-comment>.comment-info>.comment-content{font: 14px/20px '';color: #333;margin: 5px 0;}
-
-.film-detail>.detail-comment>.comment-info>.comment-user{}
-.film-detail>.detail-comment>.comment-info>.comment-user>.comment-user-info{}
-.film-detail>.detail-comment>.comment-info>.comment-user>.comment-user-info>.comment-user-info-img{}
-.film-detail>.detail-comment>.comment-info>.comment-user>.comment-user-info>.comment-user-info-name{}
-.film-detail>.detail-comment>.comment-info>.comment-user>.comment-user-command{}
-.film-detail>.detail-comment>.comment-info>.comment-user>.comment-user-command>.comment-user-command-approve{}
-.film-detail>.detail-comment>.comment-info>.comment-user>.comment-user-command>.comment-user-command-reply{}
-
-.film-detail>.detail-comment>.comment-box{width: 100%;height: 50px;}
-
