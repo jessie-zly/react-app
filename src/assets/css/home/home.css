@@ -1,8 +1,9 @@
 .home{width: 100%;position: relative;}
-.home>.home-title{font: 300 24px/60px '';text-align: center;color: #fff;background: #e4366b;position: fixed;top: 0;width: 100%;z-index: 50;}
-.home>.home-nav{display: flex;justify-content: space-between;padding: 0 50px;position: fixed;top: 60px;z-index: 50;background: #fff;width: 100%;}
-.home>.home-nav>li{}
-.home>.home-nav>li>a{display: block;font: 16px/40px '';padding: 0 60px;}
-.home>.home-nav>li>a.home-active{border-bottom: 5px solid #e4366b;color: #e4366b;z-index: 150;}
-.home>.home-underline{width:100%;height: 5px;background: #c2c2c2;position: fixed;top: 100px;}
-.home>.home-box{width: 100%;height: 60px;}
+.home>.home-pos{width: 100%;position: fixed;height: 105px;background: #fff;top: 0;z-index: 50;}
+.home>.home-pos>.home-title{font: 300 24px/60px '';text-align: center;color: #fff;background: #e4366b;width: 100%;}
+.home>.home-pos>.home-nav{display: flex;justify-content: space-between;padding: 0 50px;width: 100%;}
+.home>.home-pos>.home-nav>li{z-index: 100;}
+.home>.home-pos>.home-nav>li>a{display: block;font: 16px/40px '';padding: 0 60px;}
+.home>.home-pos>.home-nav>li>a.home-active{border-bottom: 5px solid #e4366b;color: #e4366b;}
+.home>.home-pos>.home-underline{width:100%;height: 5px;background: #c2c2c2;position: absolute;bottom: 0;}
+.home>.home-box{width: 100%;height: 55px;}
