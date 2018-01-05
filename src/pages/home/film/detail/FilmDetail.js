@@ -1,6 +1,8 @@
-// import
+// import react
 import React from 'react';
 import {hashHistory} from 'react-router';
+// import define page
+import Title from '../../../common/Title';
 import Comment from "./comment/Comment";
 
 // css
@@ -31,12 +33,9 @@ class FilmDetail extends React.Component {
     //
     return (
       <div className='film-detail'>
-        <div className='detail-nav'>
-          <span className='detail-back' onClick={() => {
-            this.props.router.go(-1)
-          }}>⇦</span>
-          <span className='detail-name'>{movie.nm}</span>
-        </div>
+        {/*title begin*/}
+        <Title title={movie.nm} router={this.props.router}/>
+        {/*title end*/}
         <div className='detail-info'>
           <img src={movie.img} alt="图片未找到" className='detail-img' />
           <div className='detail-desc'>
