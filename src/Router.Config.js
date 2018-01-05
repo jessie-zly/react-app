@@ -18,9 +18,8 @@ import Home from './pages/home/Home';
 import Film from "./pages/home/film/Film";
 import FilmDetail from './pages/home/film/detail/FilmDetail';
 import Cinema from "./pages/home/cinema/Cinema";
-//
+// order
 import Order from './pages/order/Order';
-// import List from './pages/order/List';
 // user
 import UserCenter from './pages/user/UserCenter';
 import Login from './pages/user/info/Login';
@@ -41,7 +40,6 @@ const RouterConfig = () => (
       </Route>
       <Route path='/film-detail/:id' component={FilmDetail} />
       <Route path='/order' component={Order} />
-      {/*<Route path='/list' component={List} />*/}
       <Route path='/user' component={UserCenter}>
         <Route path='login' component={Login} />
         <Route path='reg' component={Reg} />
