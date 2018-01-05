@@ -1,5 +1,5 @@
 /**
- * Title 组件 --> 顶板标题栏
+ * Title 组件 --> 顶部标题栏
  */
 
 // 引入 react
@@ -9,26 +9,6 @@ import '../../assets/css/common/title.css';
 
 
 // define -->
-// class Title extends React.Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {};
-//   }
-//
-//   //
-//   render() {
-//     return (
-//       <div className='title'>
-//         <div className='title-nav'>
-//           <span className='title-back' onClick={() => {this.props.router.go(-1)}}>⇦</span>
-//           <span className='title-name'>{this.props.title}</span>
-//         </div>
-//       </div>
-//
-//     )
-//   }
-// }
-
 const Title = (props)=>(
   <div className='title'>
     <div className='title-nav'>

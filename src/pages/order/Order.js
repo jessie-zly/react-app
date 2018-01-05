@@ -5,8 +5,6 @@
 // 引入 react
 import React from 'react';
 import Title from '../common/Title';
-// css
-// import '../../assets/css/common/order.css';
 
 
 // Order 组件
@@ -22,7 +20,10 @@ class Order extends React.Component {
   render() {
     return (
       <div>
+        {/*Title begin*/}
         <Title title={this.state.title} router={this.props.router}/>
+        {/*Title end*/}
+
       </div>
     )
   }

@@ -17,7 +17,6 @@ import App from './pages/App';
 import Home from './pages/home/Home';
 import Film from "./pages/home/film/Film";
 import FilmDetail from './pages/home/film/detail/FilmDetail';
-import Comment from './pages/home/film/detail/comment/Comment';
 import Cinema from "./pages/home/cinema/Cinema";
 //
 import Order from './pages/order/Order';

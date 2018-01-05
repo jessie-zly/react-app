@@ -33,9 +33,9 @@ class FilmDetail extends React.Component {
     //
     return (
       <div className='film-detail'>
-        {/*title begin*/}
+        {/*Title begin*/}
         <Title title={movie.nm} router={this.props.router}/>
-        {/*title end*/}
+        {/*Title end*/}
         <div className='detail-info'>
           <img src={movie.img} alt="图片未找到" className='detail-img' />
           <div className='detail-desc'>
