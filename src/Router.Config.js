@@ -24,6 +24,8 @@ import Order from './pages/order/Order';
 import User from './pages/user/User';
 import Center from './pages/user/info/Center';
 import Login from './pages/user/info/Login';
+import LoginByName from './pages/user/info/login/LoginByName';
+import LoginByPhone from './pages/user/info/login/LoginByPhone';
 import Reg from './pages/user/info/Reg';
 // city
 import City from './pages/city/City';
@@ -49,7 +51,12 @@ const RouterConfig = () => (
         {/*默认访问 /center*/}
         <IndexRedirect to="/user/center" />
         <Route path='center' component={Center} />
-        <Route path='login' component={Login} />
+        <Route path='login' component={Login} >
+          {/*默认访问 /name*/}
+          <IndexRedirect to="/user/login/name" />
+          <Route path='name' component={LoginByName} />
+          <Route path='phone' component={LoginByPhone} />
+        </Route>
         <Route path='reg' component={Reg} />
       </Route>
       <Route path='/city' component={City} />

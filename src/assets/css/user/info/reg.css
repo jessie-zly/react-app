@@ -1,60 +1,12 @@
-.reg-container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background: #F3EFF0;
-  color: #212121;
-}
 
-.reg-container > .reg-user-nav {
-  height: 50px;
-  background: #e4366b;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+.reg-container {height: 100%;display: flex;flex-direction: column;background: #F3EFF0;color: #212121;}
 
-.reg-container > .reg-user-nav > li {
-  padding: 0 20px;
-  font: 20px/50px '';
-  color: #FFF;
-}
+.reg-container > .reg-user-nav {height: 50px;background: #e4366b;display: flex;justify-content: space-between;align-items: center;}
+.reg-container > .reg-user-nav > li {font: 18px/50px '';color: #FFF;padding: 0 20px;}
+.reg-container > .reg-user-nav > li.user-nav-back {width: 50px;text-align: center;padding: 0;}
 
-.reg-container > .reg-main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.reg-container > .reg-main > li {
-  color: #a49a96;
-  width: 80%;
-  border: 1px solid #a49a96;
-  font: 20px/50px '';
-  background-color: #fff;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.reg-container > .reg-main > li > label {
-  text-indent: 10px;
-}
-
-.reg-container > .reg-main > li > input {
-  display: block;
-  border: 0;
-  outline: none;
-  padding-left: 10px;
-  font: 20px/30px '';
-}
-
-.reg-container > .reg-main > li > .reg-sub {
-  width: 100%;
-  font: 700 20px/50px '';
-  text-align: center;
-  border-radius: 5px;
-  color: #fff;
-  background: linear-gradient(#f8618a, #d8104f);
-}
+.reg-container > .reg-main {display: flex;flex-wrap: wrap;justify-content: center;}
+.reg-container > .reg-main > li {color: #a49a96;width: 80%;border: 1px solid #a49a96;font: 18px/50px '';background-color: #fff;border-radius: 10px;display: flex;justify-content: center;margin-top: 50px;}
+.reg-container > .reg-main > li > label {text-indent: 10px;}
+.reg-container > .reg-main > li > input {display: block;border: 0;outline: none;padding-left: 10px;font: 18px/30px '';}
+.reg-container > .reg-main > li > .reg-sub {width: 100%;font: 300 18px/50px '';text-align: center;border-radius: 5px;color: #fff;background: #e4366b;}

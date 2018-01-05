@@ -4,39 +4,35 @@
 
 // 引入 react
 import React from 'react';
-import {hashHistory} from 'react-router';
-
-
+import {hashHistory,Link} from 'react-router';
+//
+// import InfoTitle from '../InfoTitle';
+import Title from '../../common/Title';
 // 引入 css
 import '../../../assets/css/user/info/login.css';
 
 
 // Login 组件
 class Login extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state={
+      title: '用户登录',
+    }
+  }
   //
   render() {
     return (
-      <div className="login-container">
-        <ul className='login-user-nav'>
-          <li onClick={() => {this.props.router.go(-1)}}>⇦</li>
-          <li className='user-nav-login'>用户登录</li>
-          <li className='user-nav-reg' onClick={() => {hashHistory.push('/user/reg')}}>注册</li>
+      <div className="login">
+        {/*Title begin*/}
+        <Title title={this.state.title} router={this.props.router}/>
+        {/*Title end*/}
+
+        <ul className='home-nav'>
+          <li><Link to="/user/login/name" activeClassName='login-active'>美团账号登录</Link></li>
+          <li><Link to="/user/login/phone" activeClassName='login-active'>手机验证登录</Link></li>
         </ul>
-        <ul className="login-main">
-          <li>
-            <label>账号:</label>
-            <input type="text" className="login-username" placeholder="请输入账户" />
-          </li>
-          <li>
-            <label>密码:</label>
-            <input type="password" className="login-password" placeholder="请输入密码" />
-          </li>
-          <li>
-            <label><input type="checkbox" className="login-remember" />记住密码</label>
-            <a href="javascript:;" className="login-forget" onClick={() => {hashHistory.push('')}}>忘记密码？</a>
-          </li>
-          <li><input type="submit" value="确认登录" className="login-sub" onClick={()=>{hashHistory.push('/user')}}/></li>
-        </ul>
+        {this.props.children}
       </div>
     );
   }
