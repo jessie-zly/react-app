@@ -6,7 +6,7 @@
 import React from 'react';
 
 // 引入 css
-import '../../../assets/css/user/reg.css';
+import '../../../assets/css/user/info/reg.css';
 import {hashHistory} from "react-router";
 
 
@@ -19,7 +19,7 @@ class Reg extends React.Component {
         <ul className='reg-user-nav'>
           <li onClick={() => {
             this.props.router.go(-1)
-          }}>返回
+          }}>⇦
           </li>
           <li className='user-nav-login'>用户注册</li>
           <li className='user-nav-reg' onClick={() => {

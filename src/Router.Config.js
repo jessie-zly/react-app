@@ -21,7 +21,8 @@ import Cinema from "./pages/home/cinema/Cinema";
 // order
 import Order from './pages/order/Order';
 // user
-import UserCenter from './pages/user/UserCenter';
+import User from './pages/user/User';
+import Center from './pages/user/info/Center';
 import Login from './pages/user/info/Login';
 import Reg from './pages/user/info/Reg';
 // 404
@@ -35,12 +36,17 @@ const RouterConfig = () => (
       {/*默认访问 /home*/}
       <IndexRedirect to="/home" />
       <Route path='/home' component={Home}>
+        {/*默认访问 /film*/}
+        <IndexRedirect to="/home/film" />
         <Route path='film' component={Film} />
         <Route path='cinema' component={Cinema} />
       </Route>
       <Route path='/film-detail/:id' component={FilmDetail} />
       <Route path='/order' component={Order} />
-      <Route path='/user' component={UserCenter}>
+      <Route path='/user' component={User}>
+        {/*默认访问 /center*/}
+        <IndexRedirect to="/user/center" />
+        <Route path='center' component={Center} />
         <Route path='login' component={Login} />
         <Route path='reg' component={Reg} />
       </Route>

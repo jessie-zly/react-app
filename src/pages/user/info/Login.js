@@ -8,7 +8,7 @@ import {hashHistory} from 'react-router';
 
 
 // 引入 css
-import '../../../assets/css/user/login.css';
+import '../../../assets/css/user/info/login.css';
 
 
 // Login 组件
@@ -18,7 +18,7 @@ class Login extends React.Component {
     return (
       <div className="login-container">
         <ul className='login-user-nav'>
-          <li onClick={() => {this.props.router.go(-1)}}>返回</li>
+          <li onClick={() => {this.props.router.go(-1)}}>⇦</li>
           <li className='user-nav-login'>用户登录</li>
           <li className='user-nav-reg' onClick={() => {hashHistory.push('/user/reg')}}>注册</li>
         </ul>
