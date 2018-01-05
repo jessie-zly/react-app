@@ -1,6 +1,6 @@
 // import
 import React from 'react';
-import {hashHistory, Link} from 'react-router';
+import {hashHistory} from 'react-router';
 import Comment from "./comment/Comment";
 
 // css
