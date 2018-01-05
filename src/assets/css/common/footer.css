@@ -4,9 +4,13 @@
 .footer>.footer-nav{width: 100%;display: flex;justify-content: space-between;border-top: 1px solid #e2e2e2;}
 .footer>.footer-nav>li{font: 14px/18px '';color: #777;padding: 10px 30px;}
 
+.footer>.footer-user{width: 100%;padding:  0 15px;display: flex;justify-content: space-between;}
+.footer>.footer-user>span{display: block;font: 14px/40px '';padding: 0 10px; margin: 10px 0;}
+.footer>.footer-user>span.footer-user-name{color: #000;font-weight: 500;}
+.footer>.footer-user>span.footer-user-click{color: #e4366b;}
+.footer>.footer-user>span.footer-user-city{color: #777;border: 1px solid #777;border-radius: 5px;box-sizing: border-box;}
 
-
-.footer>.footer-info{width: 100%;padding:  0 15px;border-top: 1px solid #e2e2e2;display: flex;flex-direction: column;justify-content: center;}
+.footer>.footer-info{width: 100%;padding:  0 15px;display: flex;flex-direction: column;justify-content: center;}
 .footer>.footer-info>.footer-links{width: 100%;display: flex;justify-content: center;margin-top: 30px;}
 .footer>.footer-info>.footer-links>span{display: block;font: 14px/20px '';color: #000;}
 .footer>.footer-info>.footer-links>span.footer-links-name{margin-right: 10px;}

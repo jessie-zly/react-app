@@ -19,9 +19,9 @@ const Footer = () => (
       <li className='footer-client' onClick={() => {hashHistory.push('/client')}}>客户端下载</li>
     </ul>
     <div className='footer-user'>
-      <span>Jessie</span>
-      <span onClick={()=>{hashHistory.push('/user/login')}}>退出</span>
-      <span>城市:上海</span>
+      <span className='footer-user-name'>Jessie</span>
+      <span className='footer-user-click' onClick={()=>{hashHistory.push('/user/login')}}>退出</span>
+      <span className='footer-user-city' onClick={()=>{hashHistory.push('/city')}}>城市:上海</span>
     </div>
     <div className='footer-info'>
       <div className='footer-links'>
