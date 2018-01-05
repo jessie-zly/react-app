@@ -82,6 +82,7 @@ class FilmDetail extends React.Component {
         {/*Footer begin*/}
         <Footer />
         {/*Footer end*/}
+        <div className='detail-box'/>
       </div>
     );
   }

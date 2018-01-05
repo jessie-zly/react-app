@@ -8,6 +8,8 @@ import {hashHistory} from 'react-router';
 // import define
 import Title from '../common/Title';
 import Footer from '../common/Footer';
+// css
+import '../../assets/css/city/city.css';
 
 
 // City 组件
@@ -40,11 +42,22 @@ class City extends React.Component {
           <li>F</li>
           <li>G</li>
           <li>H</li>
+          <li>H</li>
+          <li>H</li>
+          <li>H</li>
+          <li>H</li>
+          <li>H</li>
+          <li>H</li>
+          <li>H</li>
+          <li>H</li>
+          <li>H</li>
+          <li>H</li>
         </ul>
 
         {/*Footer begin*/}
         <Footer />
         {/*Footer end*/}
+        <div className='city-box'/>
       </div>
     );
   }

@@ -34,3 +34,4 @@
 .film-detail>.detail-show>.detail-show-total>span.detail-show-total-credits{}
 .film-detail>.detail-show>.detail-show-total>span.detail-show-total-arrow{width: 40px;text-align: center;}
 
+.film-detail>.detail-box{width: 100%;height: 100px;}
