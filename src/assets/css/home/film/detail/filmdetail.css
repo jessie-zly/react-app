@@ -20,8 +20,8 @@
 .film-detail>.detail-tic>.detail-content{font: 14px/20px '';color: #666;width: 100%;margin-top: 10px;padding-bottom: 10px;}
 .film-detail>.detail-tic>.detail-content>p{display: block;margin: 0;}
 
-.film-detail>.detail-show{background: #fff;border-top: 1px solid #ddd;margin-bottom: 10px;}
-.film-detail>.detail-show>.detail-show-all{display: flex;justify-content: flex-start;overflow: hidden;width: 100%;padding-left: 15px;}
+.film-detail>.detail-show{background: #fff;border-top: 1px solid #ddd;margin-bottom: 10px;width: 100%;overflow: hidden;}
+.film-detail>.detail-show>.detail-show-all{display: flex;justify-content: flex-start;overflow: hidden;padding-left: 15px;width: 1000%;}
 .film-detail>.detail-show>.detail-show-all>.detail-show-dir{width: 70px;height: 140px;display: flex;flex-direction: column;justify-content: center;margin-right: 10px;}
 .film-detail>.detail-show>.detail-show-all>.detail-show-dir>.show-img{display: block;width: 70px;height: 100px;}
 .film-detail>.detail-show>.detail-show-all>.detail-show-dir>span{display: block;width: 100%;font: 12px/20px '';text-align: center;}

@@ -59,6 +59,9 @@ class FilmDetail extends React.Component {
               <span className='dir-name'>{movie.dir}</span>
               <span className='dir-title'>导演</span>
             </dt>
+            
+            TODO
+
             {
               movie.star.split(' ').map((item, index) => {
                 return (
