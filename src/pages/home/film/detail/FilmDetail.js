@@ -2,8 +2,9 @@
 import React from 'react';
 import {hashHistory} from 'react-router';
 // import define page
-import Title from '../../../common/Title';
 import Comment from "./comment/Comment";
+import Title from '../../../common/Title';
+import Footer from '../../../common/Footer';
 
 // css
 import '../../../../assets/css/home/film/detail/filmdetail.css';
@@ -78,6 +79,9 @@ class FilmDetail extends React.Component {
           </div>
         </div>
         <Comment id={this.props.params.id} />
+        {/*Footer begin*/}
+        <Footer />
+        {/*Footer end*/}
       </div>
     );
   }

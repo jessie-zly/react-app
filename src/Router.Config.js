@@ -25,6 +25,8 @@ import User from './pages/user/User';
 import Center from './pages/user/info/Center';
 import Login from './pages/user/info/Login';
 import Reg from './pages/user/info/Reg';
+// city
+import City from './pages/city/City';
 // 404
 import Error from './pages/common/Error';
 
@@ -50,6 +52,7 @@ const RouterConfig = () => (
         <Route path='login' component={Login} />
         <Route path='reg' component={Reg} />
       </Route>
+      <Route path='/city' component={City} />
       <Route path='*' component={Error} />
     </Route>
   </Router>

@@ -67,7 +67,6 @@ class Comment extends React.Component {
           > 查看全部{comment.hcmts.length + comment.cmts.length}条短评
           </div>
         </li>
-        <li className='comment-box' />
       </ul>
     );
   }
