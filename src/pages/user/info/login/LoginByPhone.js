@@ -16,11 +16,12 @@ class LoginByPhone extends React.Component {
     return (
       <div className='loginByPhone'>
         <div className='loginByPhone-name'>
-          <input type="text" className="loginByPhone-name-ipt" placeholder="请输入手机号" />
+          <input type="number" className="loginByPhone-name-ipt" placeholder="请输入手机号" />
+          <input type="button" className="loginByPhone-name-send" value="发送验证码" onClick={() => {alert('Code: 001122')}} />
         </div>
         <div className='loginByPhone-divide'/>
-        <div className='loginByPhone-pw'>
-          <input type="password" className="loginByPhone-pw-ipt" placeholder="请输入短信验证码" />
+        <div className='loginByPhone-code'>
+          <input type="number" className="loginByPhone-code-ipt" placeholder="请输入短信验证码" />
           </div>
         <div className='loginByPhone-divide'/>
         <div className='login-sub'>
