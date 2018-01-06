@@ -9,10 +9,15 @@
 .loginByName>.loginByName-pw{width: 100%;padding: 5px 0;}
 .loginByName>.loginByName-pw>.loginByName-pw-ipt{display: block;width: 100%;outline: none;background: #EFEFEF;font: 14px/28px '';color: #666;border: none;border-radius: 5px;text-indent: 10px;}
 
-.loginByName>.login-sub{width: 100%;}
+.loginByName>.login-sub{width: 100%;margin-top: 10px;}
 .loginByName>.login-sub>.login-sub-ipt{display: block;width: 100%;font: 300 18px/40px '';text-align: center;border-radius: 5px;color: #fff;background: #e4366b;}
 
 .loginByName>.loginByName-jump{width: 100%;display: flex;justify-content: space-between;}
 .loginByName>.loginByName-jump>span{display: block;font: 14px/24px '';color: #e4366b;padding: 10px 0;}
 .loginByName>.loginByName-jump>span.loginByName-jump-reg{}
 .loginByName>.loginByName-jump>span.loginByName-jump-forget{}
+
+.loginByName>.loginByName-foot{width: 100%;display: flex;justify-content: center;margin: 5px 0;}
+.loginByName>.loginByName-foot>span{display: block;font: 14px/20px '';color: #222;}
+.loginByName>.loginByName-foot>span.loginByName-foot-desc{}
+.loginByName>.loginByName-foot>span.loginByName-foot-phone{color: #e4366b;text-decoration: underline;}

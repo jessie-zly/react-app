@@ -22,12 +22,17 @@ class LoginByName extends React.Component {
         <div className='loginByName-pw'>
           <input type="password" className="loginByName-pw-ipt" placeholder="请输入您的密码" />
         </div>
+        <div className='loginByName-divide'/>
         <div className='login-sub'>
           <input type="submit" value="确认登录" className="login-sub-ipt" onClick={() => {hashHistory.push('/user')}} />
         </div>
         <div className='loginByName-jump'>
           <span className='loginByName-jump-reg' onClick={() => {hashHistory.push('/user/reg')}}>立即注册</span>
           <span className='loginByName-jump-forget' onClick={() => {hashHistory.push('/user/forget')}}>找回密码</span>
+        </div>
+        <div className='loginByName-foot'>
+          <span className='loginByName-foot-desc'>© 狗眼电影 客服电话：</span>
+          <span className='loginByName-foot-phone'>400-670-5335</span>
         </div>
       </div>
     );
