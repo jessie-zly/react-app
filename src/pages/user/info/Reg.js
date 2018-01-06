@@ -16,7 +16,7 @@ class Reg extends React.Component {
     super(props);
     this.state = {
       title: '用户注册',
-    }
+    };
   }
 
   //
@@ -40,9 +40,9 @@ class Reg extends React.Component {
         </div>
 
         <div className='reg-check'>
-          <label className='reg-check-label'>
-            <input type="checkbox" className='reg-check-ipt'/>
-            我已阅读并同意
+          <input type="checkbox" className='reg-check-ipt' id='reg-check-input'/>
+          <label className='reg-check-label' htmlFor='reg-check-input'>
+            <span className='reg-check-understand'>我已阅读并同意</span>
             <span className='reg-check-agree'>《美团网用户协议》</span>
           </label>
         </div>
