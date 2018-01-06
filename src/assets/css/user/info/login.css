@@ -1,15 +1,9 @@
 
-.login-container {width: 100%;height: 100%;display: flex;flex-direction: column;background: #EFEFEF;color: #212121;}
+.login{width: 100%;background: #fff;}
 
-.login-container > .login-user-nav {height: 50px;background: #e4366b;display: flex;justify-content: space-between;align-items: center;}
-.login-container > .login-user-nav > li {font: 18px/50px '';color: #FFF;padding: 0 20px;}
-.login-container > .login-user-nav > li.user-nav-back {width: 50px;text-align: center;padding: 0;}
-
-.login-container > .login-main {display: flex;flex-wrap: wrap;justify-content: center;}
-.login-container > .login-main > li {color: #a49a96;width: 80%;border: 1px solid #a49a96;font: 18px/50px '';background-color: #fff;border-radius: 10px;display: flex;justify-content: center;margin-top: 50px;}
-.login-container > .login-main > li > input {border: 0;outline: none;padding-left: 20px;font: 18px/30px '';color: #676767;}
-.login-container > .login-main > li:nth-of-type(3) {border: none;display: flex;align-content: center;justify-content: space-between;background-color: transparent;}
-.login-container > .login-main > li > input.login-remember {vertical-align: middle;display: inline-block;}
-.login-container > .login-main > li > .login-forget {color: #676767;text-decoration: underline;outline: none;margin-left: 10px;}
-.login-container > .login-main > li:nth-of-type(4) {border: 0;background-color: transparent;}
-.login-container > .login-main > li > input.login-sub {width: 100%;font: 300 18px/50px '';text-align: center;border-radius: 5px;color: #fff;background: #e4366b;}
+.login>.login-pos{width: 100%;position: relative;}
+.login>.login-pos>.login-nav{width: 100%;padding: 0 20px;display: flex;justify-content: space-between;}
+.login>.login-pos>.login-nav>li{z-index: 50;}
+.login>.login-pos>.login-nav>li>a{display: block;font: 16px/40px '';padding: 0 40px;}
+.login>.login-pos>.login-nav>li>a.login-active{border-bottom: 5px solid #e4366b;color: #e4366b;}
+.login>.login-pos>.login-underline{width:100%;height: 5px;background: #c2c2c2;position: absolute;bottom: 0;}

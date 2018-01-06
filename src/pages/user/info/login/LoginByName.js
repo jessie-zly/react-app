@@ -5,41 +5,30 @@
 // 引入 react
 import React from 'react';
 import {hashHistory} from 'react-router';
+// css
+import '../../../../assets/css/user/info/login/loginByName.css';
 
 
 // LoginByName 组件
 class LoginByName extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state={
-      name: '用户登录',
-    }
-  }
-
   //
   render() {
     return (
-      <div className="loginByName">
-
-       login by name ...
-
-
-        <ul className="login-main">
-        <li>
-        <label>账号:</label>
-        <input type="text" className="login-username" placeholder="请输入账户" />
-        </li>
-        <li>
-        <label>密码:</label>
-        <input type="password" className="login-password" placeholder="请输入密码" />
-        </li>
-        <li>
-        <label><input type="checkbox" className="login-remember" />记住密码</label>
-        <a href="javascript:;" className="login-forget" onClick={() => {hashHistory.push('')}}>忘记密码？</a>
-        </li>
-        <li><input type="submit" value="确认登录" className="login-sub" onClick={()=>{hashHistory.push('/user')}}/></li>
-        </ul>
-
+      <div className='loginByName'>
+        <div className='loginByName-name'>
+          <input type="text" className="loginByName-name-ipt" placeholder="账户名/手机号/Email" />
+        </div>
+        <div className='loginByName-divide'/>
+        <div className='loginByName-pw'>
+          <input type="password" className="loginByName-pw-ipt" placeholder="请输入您的密码" />
+        </div>
+        <div className='login-sub'>
+          <input type="submit" value="确认登录" className="login-sub-ipt" onClick={() => {hashHistory.push('/user')}} />
+        </div>
+        <div className='loginByName-jump'>
+          <span className='loginByName-jump-reg' onClick={() => {hashHistory.push('/user/reg')}}>立即注册</span>
+          <span className='loginByName-jump-forget' onClick={() => {hashHistory.push('/user/forget')}}>找回密码</span>
+        </div>
       </div>
     );
   }
