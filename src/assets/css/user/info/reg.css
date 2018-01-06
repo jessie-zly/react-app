@@ -1,12 +1,26 @@
 
-.reg-container {height: 100%;display: flex;flex-direction: column;background: #F3EFF0;color: #212121;}
+.reg{width: 100%;display: flex;flex-direction: column;}
 
-.reg-container > .reg-user-nav {height: 50px;background: #e4366b;display: flex;justify-content: space-between;align-items: center;}
-.reg-container > .reg-user-nav > li {font: 18px/50px '';color: #FFF;padding: 0 20px;}
-.reg-container > .reg-user-nav > li.user-nav-back {width: 50px;text-align: center;padding: 0;}
+.reg>.reg-step{width: 100%;display: flex;justify-content: center;padding: 5px 15px;background: #fff;}
+.reg>.reg-step>span{display: block;font: 14px/28px '';color: #666;}
+.reg>.reg-step>span.reg-step-arrow{width: 28px;text-align: center;font-size: 10px;}
+.reg>.reg-step>span.reg-step-first{}
+.reg>.reg-step>span.reg-step-second{}
+.reg>.reg-step>span.reg-step-third{}
+.reg>.reg-step>span.active{color: #e4366b;}
 
-.reg-container > .reg-main {display: flex;flex-wrap: wrap;justify-content: center;}
-.reg-container > .reg-main > li {color: #a49a96;width: 80%;border: 1px solid #a49a96;font: 18px/50px '';background-color: #fff;border-radius: 10px;display: flex;justify-content: center;margin-top: 50px;}
-.reg-container > .reg-main > li > label {text-indent: 10px;}
-.reg-container > .reg-main > li > input {display: block;border: 0;outline: none;padding-left: 10px;font: 18px/30px '';}
-.reg-container > .reg-main > li > .reg-sub {width: 100%;font: 300 18px/50px '';text-align: center;border-radius: 5px;color: #fff;background: #e4366b;}
+.reg>.reg-phone{width: 100%;padding: 10px 15px;margin-top: 10px;background: #fff;}
+.reg>.reg-phone>.reg-phone-ipt{display: block;width: 100%;outline: none;background: #f2f2f2;font: 14px/28px '';color: #666;border: none;border-radius: 3px;text-indent: 10px;}
+
+.reg>.reg-check{width: 100%;padding: 10px 15px;background: #fff;margin-top: 10px;}
+.reg>.reg-check>.reg-check-label{width: 100%;display: flex;justify-content: flex-start;font: 14px/30px '';color: #333;}
+.reg>.reg-check>.reg-check-label>.reg-check-ipt{display: block;width: 20px;height: 20px;text-align: center;margin: 5px 0 0;}
+.reg>.reg-check>.reg-check-label>.reg-check-agree{display: block;color: #e4366b;}
+
+.reg>.reg-btn{width: 100%;margin-top: 10px;padding: 0 15px;}
+.reg>.reg-btn>.reg-btn-send{display: block;width: 100%;font: 300 18px/40px '';text-align: center;border-radius: 5px;color: #fff;background: #e4366b;outline: none;}
+
+.reg>.reg-foot{width: 100%;display: flex;justify-content: center;margin: 10px 0;padding: 0 15px;}
+.reg>.reg-foot>span{display: block;font: 14px/20px '';color: #222;}
+.reg>.reg-foot>span.reg-foot-desc{}
+.reg>.reg-foot>span.reg-foot-phone{color: #e4366b;text-decoration: underline;}

@@ -12,7 +12,7 @@
 .loginByPhone>.loginByPhone-code>.loginByPhone-code-ipt{display: block;width: 100%;outline: none;background: #EFEFEF;font: 14px/28px '';color: #666;border: none;border-radius: 5px;text-indent: 10px;}
 
 .loginByPhone>.login-sub{width: 100%;margin-top: 10px;}
-.loginByPhone>.login-sub>.login-sub-ipt{display: block;width: 100%;font: 300 18px/40px '';text-align: center;border-radius: 5px;color: #fff;background: #e4366b;}
+.loginByPhone>.login-sub>.login-sub-ipt{display: block;width: 100%;font: 300 18px/40px '';text-align: center;border-radius: 5px;color: #fff;background: #e4366b;outline: none;}
 
 .loginByPhone>.loginByPhone-jump{width: 100%;display: flex;justify-content: space-between;}
 .loginByPhone>.loginByPhone-jump>span{display: block;font: 14px/24px '';color: #e4366b;padding: 10px 0;}
