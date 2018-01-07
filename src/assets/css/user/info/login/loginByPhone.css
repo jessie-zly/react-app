@@ -2,9 +2,10 @@
 .loginByPhone{width: 100%;height: 100%;display: flex;flex-direction: column;background: #fff;padding: 0 15px;}
 
 .loginByPhone>.loginByPhone-name{width: 100%;padding: 5px 0;display: flex;justify-content: space-between;}
-.loginByPhone>.loginByPhone-name>input{display: block;outline: none;background: #f2f2f2;font: 14px/28px '';color: #666;border: none;border-radius: 5px;padding: 1px 0;}
-.loginByPhone>.loginByPhone-name>input.loginByPhone-name-ipt{text-indent: 10px;width: 250px;text-align: left;}
-.loginByPhone>.loginByPhone-name>input.loginByPhone-name-send{width: 100px;text-align: center;}
+.loginByPhone>.loginByPhone-name>input{display: block;outline: none;background: #f2f2f2;font: 14px/28px '';color: #666;border: none;border-radius: 5px;}
+.loginByPhone>.loginByPhone-name>input.loginByPhone-name-ipt{text-indent: 10px;width: 250px;text-align: left;padding: 1px 0;}
+.loginByPhone>.loginByPhone-name>input.loginByPhone-name-send{width: 100px;text-align: center;border: 1px solid #f2f2f2;box-sizing: border-box;padding: 0;}
+.loginByPhone>.loginByPhone-name>input.active{color: #e4366b;background: #fff;border: 1px solid #e4366b;}
 
 .loginByPhone>.loginByPhone-divide{width: 100%;height: 1px;background: #f2f2f2;}
 

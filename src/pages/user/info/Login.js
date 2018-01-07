@@ -17,10 +17,11 @@ class Login extends React.Component {
     super(props);
     this.state = {
       title: '用户登录',
+      active: false,
     }
   }
 
-  //
+  // TODO
   render() {
     return (
       <div className="login">
@@ -29,6 +30,7 @@ class Login extends React.Component {
         {/*Title end*/}
 
         <div className="login-pos">
+          <div className={this.state.active ? 'login-tip login-tip-active' : 'login-tip'}>手机动态码错误，请重新输入</div>
           <ul className='login-nav'>
             <li><Link to="/user/login/name" activeClassName='login-active'>美团账号登录</Link></li>
             <li><Link to="/user/login/phone" activeClassName='login-active'>手机验证登录</Link></li>

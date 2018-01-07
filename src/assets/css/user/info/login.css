@@ -2,6 +2,10 @@
 .login{width: 100%;background: #fff;}
 
 .login>.login-pos{width: 100%;position: relative;}
+
+.login>.login-pos>.login-tip{width: 100%;background: #FFF6E0;font: 12px/36px '';color: #D78900;border-bottom: 1px solid #FFEBC8;text-align: center;display: none;}
+.login>.login-pos>.login-tip-active{display: block;}
+
 .login>.login-pos>.login-nav{width: 100%;padding: 0 20px;display: flex;justify-content: space-between;}
 .login>.login-pos>.login-nav>li{z-index: 50;}
 .login>.login-pos>.login-nav>li>a{display: block;font: 16px/40px '';padding: 0 40px;}
