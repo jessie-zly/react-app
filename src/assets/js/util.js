@@ -1,12 +1,19 @@
 /**
  * 公共方法
  */
-export default util = {
+const util = {
+  /**
+   * 6位随机验证码
+   * @returns {string}
+   */
   sendCode() {
-    let arr = [];
+    const arr = [];
     for (let i = 0; i <= 5; i++) {
-      arr[i] = Math.floor(Math.random() * 10);
+      arr[i] = ~~(Math.random() * 10);
     }
-    return arr.join("");
-  }
-}
+    return arr.join('');
+  },
+
+};
+//
+export default util;
