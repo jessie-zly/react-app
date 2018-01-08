@@ -26,16 +26,16 @@ module.exports = {
   },
   devServer: {
     inline: true,
+        // http://m.maoyan.com/movie/list.json?type=hot&offset=0&limit=1000
+        // target: 'http://m.maoyan.com',
     // proxy: {
     //   '/api': {
     //     target: 'https://api.douban.com',
-    // http://m.maoyan.com/movie/list.json?type=hot&offset=0&limit=1000
-    // target: 'http://m.maoyan.com',
-    // changeOrigin: true,
-    // pathRewrite: {
-    //   '^/api': ''
-    // }
-    // }
+    //     changeOrigin: true,
+    //     pathRewrite: {
+    //       '^/api': ''
+    //     }
+    //   }
     // }
   },
   devtool: 'source-map',
